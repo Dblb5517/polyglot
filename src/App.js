@@ -17,7 +17,8 @@ const App = () => {
     <Router>
       <Header openModal={openModal} />
       <Routes>
-        <Route path="/" element={<HeroSection />} />
+        <Route path="/" index element={<HeroSection />} />
+        <Route path="/polyglot" element={<HeroSection />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/teacher" element={<TeacherPage />} />
         <Route path="/student" element={<StudentPage />} />
